@@ -1,0 +1,66 @@
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+:root {
+    --background-color: #f5f5dc;
+    --text-color: #333333;
+
+    --font-size-small: 0.8rem;
+    --font-size-medium: 1rem;
+    --font-size-large: 1.5rem;
+
+    --margin-small: 0.5rem;
+    --margin-medium: 1rem;
+    --margin-large: 2rem;
+
+    --padding-small: 0.5rem;
+    --padding-medium: 1rem;
+    --padding-large: 2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    animation: fade-in 0.5s ease forwards;
+}
+
+/* Przykładowe style elementów */
+/* body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: var(--margin-medium);
+    padding: var(--padding-medium);
+    font-size: var(--font-size-medium);
+}
+
+h1 {
+    font-size: var(--font-size-large);
+    margin-bottom: var(--margin-small);
+}
+
+p {
+    margin-bottom: var(--margin-small);
+    line-height: 1.6;
+}
+
+.button {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    padding: var(--padding-small) var(--padding-medium);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.8;
+} */
