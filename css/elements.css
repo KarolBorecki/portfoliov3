@@ -1,25 +1,45 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
+section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
     padding: 0;
-    color: #333;
-    background-color: #f4f7f9;
-    line-height: 1.6;
+    position: relative;
+    text-align: center;
 }
 
-:root {
-    --primary-color: #4A90E2;
-    --secondary-color: #e3f2fd;
-    --text-color: #333;
-    --background-color: #fff;
+
+h1 {
+    font-size: 8rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--text-color);
+}
+
+h2 {
+    font-size: 4rem;
+    margin-top: 20px;
+    color: var(--text-color);
+}
+
+p {
+    font-size: 1.8rem;
+    max-width: 80%;
+    line-height: 1.6;
+    color: var(--text-color);
 }
 
 .header {
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 20px 40px;
     background-color: var(--primary-color);
-    color: #fff;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
@@ -31,19 +51,6 @@ body {
     max-width: 150px;
     max-height: 150px;
     margin-right: 20px;
-    border: 4px solid #fff;
-}
-
-.header-content h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    font-weight: 700;
-}
-
-.header-content h3 {
-    margin: 0;
-    font-weight: 300;
-    font-size: 1.2rem;
 }
 
 .about-me,
@@ -55,7 +62,7 @@ body {
     padding: 40px;
     margin: 40px auto;
     border-radius: 20px;
-    max-width: 80%;
+    text-align: center;
 }
 
 .about-me-photos {
@@ -160,4 +167,24 @@ footer {
 
 .project-photos img:hover {
     transform: scale(1.05);
+}
+
+.wave {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+}
+
+.wave path {
+    fill: #333;
+    opacity: 0.9;
+    width: 100%;
+}
+
+.wave-top {
+    top: -1px;
+}
+
+.wave-bottom {
+    bottom: -1px;
 }
