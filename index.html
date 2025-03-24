@@ -5,102 +5,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karol Borecki</title>
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/elements.css">
     <link rel="stylesheet" href="css/page.css">
 </head>
 
 <body>
-    <div class="header">
-        <img src="img/me.jpg" class="header-img" />
+    <header class="header">
+        <img src="img/me.jpg" class="header-img" alt="Karol Borecki" />
         <div class="header-content">
             <h1>Karol Borecki</h1>
-            <h3>Software developer</h3>
+            <h3>Software Developer</h3>
         </div>
-    </div>
+    </header>
 
-
-
-    <div class="about-me">
-        <h1>About me</h1>
-        Jestem osobą kreatywną - uwielbiam malować, czytać czy grać na instrumentach. Kocham biegać i jeździć na
-        rowerze. Dużo podróżuje na rowerzy czy też autostopem.        <div class="about-me-photos">
-            <img src="img/interest_1.jpg" />
-            <img src="img/interest_2.jpg" />
-            <img src="img/interest_3.jpg" />
+    <section class="about-me">
+        <h1>About Me</h1>
+        <p>Jestem osobą kreatywną - uwielbiam malować, czytać oraz grać na instrumentach. Kocham biegać i jeździć na
+            rowerze. Dużo podróżuję na rowerze lub autostopem.</p>
+        <div class="about-me-photos">
+            <img src="img/interest_1.jpg" alt="Malowanie" />
+            <img src="img/interest_2.jpg" alt="Bieganie" />
+            <img src="img/interest_3.jpg" alt="Podróże" />
         </div>
-    </div>
-    <hr class="divider">
-    <div class="skills-container">
-        <div class="skills-section">
-            <h2>Programming</h2>
-            <ul class="skills-list">
-                <li>c/c++, embedded, HAL, Arduino, RTOS</li>
-                <li>uC families: STM32, ATMega, Broadcom (Raspberry PI)</li>
-                <li>java, spring</li>
-                <li>reactJS</li>
-                <li>C/C++, OpenGL, computer graphics</li>
-                <li>docker environment, debugging tools</li>
-                <li>wordpress</li>
-            </ul>
-        </div>
-        <div class="skills-section">
-            <h2>Hard skills</h2>
-            <ul class="skills-list">
-                <li>PCB design, soldering</li>
-                <li>Network management</li>
-                <li>Linux administrating</li>
-                <li>Usage of power tools and workshop tasks</li>
-            </ul>
-        </div>
-
-        <div class="skills-section">
-            <h2>Soft skills</h2>
-            <ul class="skills-list">
-                <li>praca zespołowa, zarządzanie zespołem</li>
-                <li>koordynowanie projektem</li>
-                <li>architektura systemów, zarządzanie ryzykiem i jakościom oprogramowania</li>
-                <li>przekazywanie wiedzy, prowadzenie zajęć edukacyjnych</li>
-            </ul>
-        </div>
-    </div>
+    </section>
 
     <hr class="divider">
 
-    <div class="contact-container">
+    <section class="skills-container">
+        <div class="skills-section">
+            <h2>Programming Skills</h2>
+            <ul class="skills-list">
+                <li>C/C++, Embedded, HAL, Arduino, RTOS</li>
+                <li>Microcontroller families: STM32, ATMega, Broadcom (Raspberry PI)</li>
+                <li>Java, Spring Framework</li>
+                <li>ReactJS</li>
+                <li>OpenGL, Computer Graphics</li>
+                <li>Docker environment, Debugging tools</li>
+                <li>WordPress</li>
+            </ul>
+        </div>
+
+        <div class="skills-section">
+            <h2>Technical Skills</h2>
+            <ul class="skills-list">
+                <li>PCB Design, Soldering</li>
+                <li>Network Management</li>
+                <li>Linux Administration</li>
+                <li>Workshop Tasks and Power Tools Usage</li>
+            </ul>
+        </div>
+
+        <div class="skills-section">
+            <h2>Soft Skills</h2>
+            <ul class="skills-list">
+                <li>Teamwork and Leadership</li>
+                <li>Project Coordination</li>
+                <li>System Architecture, Risk and Quality Management</li>
+                <li>Knowledge Sharing and Educational Sessions</li>
+            </ul>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <section class="contact-container">
         <h1>Contact</h1>
-        <p>please, do not hesitate to contact me anytime :-)</p>
+        <p>Please, do not hesitate to contact me anytime :-)</p>
         <div class="contact-link-container">
-            <a href="" class="contact-link"><img src="img/contact/email.png" /></a>
-            <a href="" class="contact-link"><img src="img/contact/github.png" /></a>
-            <a href="" class="contact-link"><img src="img/contact/linkedin.png" /></a>
-            <a href="" class="contact-link"><img src="img/contact/whatsapp.png" /></a>
-            <a href="" class="contact-link"><img src="img/contact/discord.png" /></a>
-
+            <a href="mailto:example@example.com" class="contact-link"><img src="img/contact/email.png"
+                    alt="Email" /></a>
+            <a href="https://github.com/karolborecki" class="contact-link"><img src="img/contact/github.png"
+                    alt="GitHub" /></a>
+            <a href="https://linkedin.com/in/karolborecki" class="contact-link"><img src="img/contact/linkedin.png"
+                    alt="LinkedIn" /></a>
+            <a href="https://wa.me/123456789" class="contact-link"><img src="img/contact/whatsapp.png"
+                    alt="WhatsApp" /></a>
+            <a href="https://discord.com/" class="contact-link"><img src="img/contact/discord.png" alt="Discord" /></a>
         </div>
-    </div>
+    </section>
 
     <hr class="divider">
 
-    <div class="projects-container">
-        <h1>My projects</h1>
+    <section class="projects-container">
+        <h1>My Projects</h1>
         <div class="project-section">
-            <h2>Hamownia e</h2>
+            <h2>Hamownia E</h2>
             <p class="project-description">
-
+                Hamownia E is the primary measurement system for the TWR 2 rocket. The system is designed to provide a
+                user-friendly interface for a broad range of measurement applications while also offering remote
+                activation functionality. This enables the mechanic team to conduct temperature, pressure, and mass
+                measurements as well as actuator and pyro control at a safe distance from the test stand.
             </p>
             <div class="project-photos">
-                <img>
+                <img src="img/projects/hame/1.jpg" alt="Hamownia E - Image 1" />
+                <img src="img/projects/hame/2.jpg" alt="Hamownia E - Image 2" />
+                <img src="img/projects/hame/3.jpg" alt="Hamownia E - Image 3" />
             </div>
         </div>
-
-
-    </div>
+    </section>
 
     <hr class="divider">
 
     <footer>
-        <p class="text">© 2025 Karol Borecki.</p>
+        <p class="text">&copy; 2025 Karol Borecki.</p>
     </footer>
 </body>
 

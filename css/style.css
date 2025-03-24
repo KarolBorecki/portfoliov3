@@ -31,6 +31,15 @@
     margin: 0;
     padding: 0;
     animation: fade-in 0.5s ease forwards;
+    color: var(--text-color)
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: var(--margin-medium);
+    padding: var(--padding-medium);
+    font-size: var(--font-size-medium);
 }
 
 /* Przykładowe style elementów */
