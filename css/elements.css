@@ -27,6 +27,17 @@
     animation: fadeInUp 0.8s ease-in-out;
 }
 
+.icon {
+    mask: url('img/contact/github.png') no-repeat center;
+    -webkit-mask: url('img/contact/github.png') no-repeat center;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+
+    background-color: #1f2224;
+
+    display: inline-block;
+}
+
 .wave {
     position: absolute;
     width: 100%;
@@ -149,6 +160,19 @@
     height: 15vw;
 }
 
+.project-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 95vw;
+}
+
+.project-header-icon {
+    width: 3vw;
+    height: 3vw;
+}
+
 .project-content {
     display: flex;
     flex-direction: column;
@@ -214,6 +238,7 @@
     z-index: 2;
     position: absolute;
     margin-top: -2vw;
+    background-color: aquamarine;
 }
 
 .carousel-btn {
@@ -221,7 +246,9 @@
     font-weight: 700;
     border: none;
     cursor: pointer;
-    background: rgba(0, 0, 0, 0);
+    /* background: rgba(0, 0, 0, 0); */
+    background-color: blue;
+    z-index: 10;
 }
 
 .carousel-btn:hover {
