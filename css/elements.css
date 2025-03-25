@@ -17,6 +17,11 @@
     bottom: -1px;
 }
 
+.bold {
+    font-weight: 700;
+    color: var(--text-bold-color);
+}
+
 .section-header {
     font-size: 20vw;
     line-height: 1.0;
