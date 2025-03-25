@@ -5,44 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karol Borecki</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/elements.css">
-    <link rel="stylesheet" href="css/page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
+    <section class="section">
         <svg class="wave wave-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
             <path
                 d="M0,224L48,234.7C96,245,192,267,288,256C384,245,480,203,576,208C672,213,768,267,864,288C960,309,1056,299,1152,277.3C1248,256,1344,224,1392,208L1440,192V0H0Z">
             </path>
         </svg>
-        <img src="img/me.jpg" class="header-img" alt="Karol Borecki" />
-        <div class="header-content">
-            <h1>Karol Borecki</h1>
-            <h3>Software Developer</h3>
-        </div>
-        <svg class="wave wave-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
-            preserveAspectRatio="none">
-            <path
-                d="M0,128L48,133.3C96,139,192,149,288,149.3C384,149,480,139,576,154.7C672,171,768,213,864,218.7C960,224,1056,192,1152,181.3C1248,171,1344,181,1392,186.7L1440,192V320H0Z">
-            </path>
-        </svg>
-    </header>
-
-    <section class="about-me">
-        <svg class="wave wave-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
-            <path
-                d="M0,224L48,234.7C96,245,192,267,288,256C384,245,480,203,576,208C672,213,768,267,864,288C960,309,1056,299,1152,277.3C1248,256,1344,224,1392,208L1440,192V0H0Z">
-            </path>
-        </svg>
-        <h1>About Me</h1>
-        <p>Jestem osobą kreatywną - uwielbiam malować, czytać oraz grać na instrumentach. Kocham biegać i jeździć na
-            rowerze. Dużo podróżuję na rowerze lub autostopem.</p>
-        <div class="about-me-photos">
-            <img src="img/interest_1.jpg" alt="Malowanie" />
-            <img src="img/interest_2.jpg" alt="Bieganie" />
-            <img src="img/interest_3.jpg" alt="Podróże" />
+        <div class="header section-content">
+            <!-- <img src="img/me.jpg" class="header-img" alt="Karol Borecki" /> -->
+            <div class="header-content">
+                <h1 class="section-header">Karol Borecki</h1>
+                <h3 class="section-subsubheader section-light-header">Software Developer</h3>
+            </div>
         </div>
         <svg class="wave wave-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
             preserveAspectRatio="none">
@@ -52,27 +36,61 @@
         </svg>
     </section>
 
-    <section class="skills-container">
+    <section class="section">
         <svg class="wave wave-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
             <path
                 d="M0,224L48,234.7C96,245,192,267,288,256C384,245,480,203,576,208C672,213,768,267,864,288C960,309,1056,299,1152,277.3C1248,256,1344,224,1392,208L1440,192V0H0Z">
             </path>
         </svg>
-        <div class="skills-section">
-            <h2>Programming Skills</h2>
+        <div class="about-me section-content">
+            <h1 class="section-header">About Me</h1>
+            <p class="section-description">Jestem osobą kreatywną - uwielbiam malować, czytać oraz grać na
+                instrumentach. Kocham biegać i jeździć na
+                rowerze. Dużo podróżuję na rowerze lub autostopem.</p>
+        </div>
+        <svg class="wave wave-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+            preserveAspectRatio="none">
+            <path
+                d="M0,128L48,133.3C96,139,192,149,288,149.3C384,149,480,139,576,154.7C672,171,768,213,864,218.7C960,224,1056,192,1152,181.3C1248,171,1344,181,1392,186.7L1440,192V320H0Z">
+            </path>
+        </svg>
+    </section>
+
+    <section class="section">
+        <svg class="wave wave-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path
+                d="M0,224L48,234.7C96,245,192,267,288,256C384,245,480,203,576,208C672,213,768,267,864,288C960,309,1056,299,1152,277.3C1248,256,1344,224,1392,208L1440,192V0H0Z">
+            </path>
+        </svg>
+        <div class="skills section-content">
+            <h1 class="section-header">Coding<br>Skills</h1>
             <ul class="skills-list">
                 <li>C/C++, Embedded, HAL, Arduino, RTOS</li>
                 <li>Microcontroller families: STM32, ATMega, Broadcom (Raspberry PI)</li>
                 <li>Java, Spring Framework</li>
                 <li>ReactJS</li>
                 <li>OpenGL, Computer Graphics</li>
-                <li>Docker environment, Debugging tools</li>
+                <li>Docker</li>
+                <li>Debugging tools (GDB, STM debugger)</li>
                 <li>WordPress</li>
             </ul>
         </div>
+        <svg class="wave wave-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+            preserveAspectRatio="none">
+            <path
+                d="M0,128L48,133.3C96,139,192,149,288,149.3C384,149,480,139,576,154.7C672,171,768,213,864,218.7C960,224,1056,192,1152,181.3C1248,171,1344,181,1392,186.7L1440,192V320H0Z">
+            </path>
+        </svg>
+    </section>
 
-        <div class="skills-section">
-            <h2>Technical Skills</h2>
+    <section class="section">
+        <svg class="wave wave-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path
+                d="M0,224L48,234.7C96,245,192,267,288,256C384,245,480,203,576,208C672,213,768,267,864,288C960,309,1056,299,1152,277.3C1248,256,1344,224,1392,208L1440,192V0H0Z">
+            </path>
+        </svg>
+        <div class="skills section-content">
+            <h1 class="section-header">Technical<br>Skills</h1>
             <ul class="skills-list">
                 <li>PCB Design, Soldering</li>
                 <li>Network Management</li>
@@ -80,9 +98,22 @@
                 <li>Workshop Tasks and Power Tools Usage</li>
             </ul>
         </div>
+        <svg class="wave wave-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+            preserveAspectRatio="none">
+            <path
+                d="M0,128L48,133.3C96,139,192,149,288,149.3C384,149,480,139,576,154.7C672,171,768,213,864,218.7C960,224,1056,192,1152,181.3C1248,171,1344,181,1392,186.7L1440,192V320H0Z">
+            </path>
+        </svg>
+    </section>
 
-        <div class="skills-section">
-            <h2>Soft Skills</h2>
+    <section class="section">
+        <svg class="wave wave-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path
+                d="M0,224L48,234.7C96,245,192,267,288,256C384,245,480,203,576,208C672,213,768,267,864,288C960,309,1056,299,1152,277.3C1248,256,1344,224,1392,208L1440,192V0H0Z">
+            </path>
+        </svg>
+        <div class="skills section-content">
+            <h1 class="section-header">Soft<br>Skills</h1>
             <ul class="skills-list">
                 <li>Teamwork and Leadership</li>
                 <li>Project Coordination</li>
@@ -98,25 +129,93 @@
         </svg>
     </section>
 
-    <section class="projects-container">
+    <section class="section">
         <svg class="wave wave-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
             <path
                 d="M0,224L48,234.7C96,245,192,267,288,256C384,245,480,203,576,208C672,213,768,267,864,288C960,309,1056,299,1152,277.3C1248,256,1344,224,1392,208L1440,192V0H0Z">
             </path>
         </svg>
-        <h1>My Projects</h1>
-        <div class="project-section">
-            <h2>Hamownia E</h2>
-            <p class="project-description">
-                Hamownia E is the primary measurement system for the TWR 2 rocket. The system is designed to provide a
-                user-friendly interface for a broad range of measurement applications while also offering remote
-                activation functionality. This enables the mechanic team to conduct temperature, pressure, and mass
-                measurements as well as actuator and pyro control at a safe distance from the test stand.
-            </p>
-            <div class="project-photos">
-                <img src="img/projects/hame/1.jpg" alt="Hamownia E - Image 1" />
-                <img src="img/projects/hame/2.jpg" alt="Hamownia E - Image 2" />
-                <img src="img/projects/hame/3.jpg" alt="Hamownia E - Image 3" />
+        <div class="projects section-content">
+            <h1 class="section-subheader">My Projects</h1>
+            <div class="project-section">
+                <div class="project-carousele">
+                    <div class="carousel" id="carousel">
+                        <div class="carousel-view">
+                            <div class="project-content">
+                                <h2 class="section-subsubheader">Hamownia E</h2>
+                                <p class="project-description">
+                                    Hamownia E is the primary measurement system for the TWR 2 rocket. The system is
+                                    designed to provide a
+                                    user-friendly interface for a broad range of measurement applications while also
+                                    offering remote
+                                    activation functionality. This enables the mechanic team to conduct temperature,
+                                    pressure, and mass
+                                    measurements as well as actuator and pyro control at a safe distance from the test
+                                    stand.
+                                </p>
+                                <div class="project-photos">
+                                    <!-- <img src="img/projects/hame/1.jpg" alt="Hamownia E - Image 1">
+                                    <img src="img/projects/hame/2.jpg" alt="Hamownia E - Image 2">
+                                    <img src="img/projects/hame/3.jpg" alt="Hamownia E - Image 3"> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-view">
+                            <div class="project-content">
+                                <h2 class="section-subsubheader">FAVE</h2>
+                                <p class="project-description">
+                                    Hamownia E is the primary measurement system for the TWR 2 rocket. The system is
+                                    designed to provide a
+                                    user-friendly interface for a broad range of measurement applications while also
+                                    offering remote
+                                    activation functionality. This enables the mechanic team to conduct temperature,
+                                    pressure, and mass
+                                    measurements as well as actuator and pyro control at a safe distance from the test
+                                    stand.
+                                </p>
+                                <div class="project-photos">
+                                    <!-- <img src="img/projects/fave/1.jpg" alt="Hamownia E - Image 1">
+                                    <img src="img/projects/fave/2.jpg" alt="Hamownia E - Image 2">
+                                    <img src="img/projects/fave/3.jpg" alt="Hamownia E - Image 3"> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn" id="prevBtn">PREVIOUS</button>
+                        <button class="carousel-btn" id="nextBtn">NEXT</button>
+                    </div>
+                </div>
+            </div>
+            <svg class="wave wave-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+                preserveAspectRatio="none">
+                <path
+                    d="M0,128L48,133.3C96,139,192,149,288,149.3C384,149,480,139,576,154.7C672,171,768,213,864,218.7C960,224,1056,192,1152,181.3C1248,171,1344,181,1392,186.7L1440,192V320H0Z">
+                </path>
+            </svg>
+    </section>
+
+    <section class="section">
+        <svg class="wave wave-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path
+                d="M0,224L48,234.7C96,245,192,267,288,256C384,245,480,203,576,208C672,213,768,267,864,288C960,309,1056,299,1152,277.3C1248,256,1344,224,1392,208L1440,192V0H0Z">
+            </path>
+        </svg>
+        <div class="contact section-content">
+            <h1 class="section-header">Contact</h1>
+            <!-- <p class="section-description">Please, do not hesitate to contact me anytime :-)</p> -->
+            <div class="contact-link-container">
+                <a href="mailto:example@example.com" class="contact-link"><img src="img/contact/email.png"
+                        alt="Email" /></a>
+                <a href="https://github.com/karolborecki" class="contact-link"><img src="img/contact/github.png"
+                        alt="GitHub" /></a>
+                <a href="https://linkedin.com/in/karolborecki" class="contact-link"><img src="img/contact/linkedin.png"
+                        alt="LinkedIn" /></a>
+                <a href="https://wa.me/123456789" class="contact-link"><img src="img/contact/whatsapp.png"
+                        alt="WhatsApp" /></a>
+                <a href="https://discord.com/" class="contact-link"><img src="img/contact/discord.png"
+                        alt="Discord" /></a>
             </div>
         </div>
         <svg class="wave wave-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
@@ -127,36 +226,9 @@
         </svg>
     </section>
 
-    <section class="contact-container">
-        <svg class="wave wave-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
-            <path
-                d="M0,224L48,234.7C96,245,192,267,288,256C384,245,480,203,576,208C672,213,768,267,864,288C960,309,1056,299,1152,277.3C1248,256,1344,224,1392,208L1440,192V0H0Z">
-            </path>
-        </svg>
-        <h1>Contact</h1>
-        <p>Please, do not hesitate to contact me anytime :-)</p>
-        <div class="contact-link-container">
-            <a href="mailto:example@example.com" class="contact-link"><img src="img/contact/email.png"
-                    alt="Email" /></a>
-            <a href="https://github.com/karolborecki" class="contact-link"><img src="img/contact/github.png"
-                    alt="GitHub" /></a>
-            <a href="https://linkedin.com/in/karolborecki" class="contact-link"><img src="img/contact/linkedin.png"
-                    alt="LinkedIn" /></a>
-            <a href="https://wa.me/123456789" class="contact-link"><img src="img/contact/whatsapp.png"
-                    alt="WhatsApp" /></a>
-            <a href="https://discord.com/" class="contact-link"><img src="img/contact/discord.png" alt="Discord" /></a>
-        </div>
-        <svg class="wave wave-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
-            preserveAspectRatio="none">
-            <path
-                d="M0,128L48,133.3C96,139,192,149,288,149.3C384,149,480,139,576,154.7C672,171,768,213,864,218.7C960,224,1056,192,1152,181.3C1248,171,1344,181,1392,186.7L1440,192V320H0Z">
-            </path>
-        </svg>
-    </section>
 
-
-    <footer>
-        <p class="text">&copy; 2025 Karol Borecki.</p>
+    <footer class=".footer">
+        &copy; 2025 Karol Borecki.
     </footer>
 
     <script>
@@ -186,6 +258,33 @@
                 scrollToSection(currentIndex);
             });
         });
+    </script>
+    <script>
+        const carousel = document.getElementById('carousel');
+        const views = carousel.querySelectorAll('.carousel-view');
+        let index = 0;
+
+        function updateCarousel() {
+            const offset = -index * 100;
+            views.forEach(view => view.style.transform = `translateX(${offset}%)`)
+        }
+
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            index = (index + 1) % views.length;
+            updateCarousel();
+        });
+
+        document.getElementById('prevBtn').addEventListener('click', () => {
+            index = (index - 1 + views.length) % views.length;
+            updateCarousel();
+        });
+
+        // setInterval(() => {
+        //     index = (index + 1) % views.length;
+        //     updateCarousel();
+        // }, 5000);
+
+        updateCarousel();
     </script>
 
 </body>
