@@ -1,19 +1,8 @@
-@keyframes fade-in {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 :root {
     --primary-color: #011627;
     --secondary-color: #C42021;
     --text-color: #1f2224;
+    --text-light-color: #C5C9BB;
     --text-bold-color: #011627;
     --background-color: #CDD1C4;
 
@@ -31,6 +20,7 @@
     color: var(--text-color);
     overflow: hidden;
     box-sizing: border-box;
+    z-index: 1;
 }
 
 body {
