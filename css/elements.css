@@ -170,7 +170,7 @@
     width: calc(95vw);
     z-index: 1;
     position: absolute;
-
+    margin-top: -2vw;
 }
 
 .carousel-btn {
@@ -223,13 +223,11 @@
         
         margin: 0;
         justify-content: space-around;
-        background-color: red;
     }
 
     .project-photos img {
         width: 31vw;
         height: 16.87vw;
-        background-color: blue;
     }
 
     .project-description {
