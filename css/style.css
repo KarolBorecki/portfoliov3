@@ -26,12 +26,6 @@
     box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
 body {
     font-family: "Kanit", sans-serif;
     background-color: var(--background-color);

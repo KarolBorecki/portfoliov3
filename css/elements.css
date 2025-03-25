@@ -100,7 +100,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
 }
 
 .projects h1 {
@@ -111,7 +110,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 90vh;
 }
 
 .project-description {
@@ -143,7 +141,6 @@
 }
 
 .project-carousel {
-    height: 65vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -232,6 +229,10 @@
 
     .project-description {
         font-size: 1.5vw;
+    }
+
+    .project-content {
+        height: 90vh;
     }
 
     .skills-list li {
