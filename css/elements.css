@@ -28,14 +28,13 @@
 }
 
 .icon {
-    mask: url('img/contact/github.png') no-repeat center;
-    -webkit-mask: url('img/contact/github.png') no-repeat center;
-    mask-size: contain;
-    -webkit-mask-size: contain;
+    filter: brightness(0) saturate(100%) invert(12%) sepia(2%) saturate(1872%) hue-rotate(165deg);
+    transition: transform 0.3s ease-in-out;
+    overflow: visible;
+}
 
-    background-color: #1f2224;
-
-    display: inline-block;
+.icon:hover {
+    transform: scale(1.1);
 }
 
 .wave {
@@ -238,7 +237,6 @@
     z-index: 2;
     position: absolute;
     margin-top: -2vw;
-    background-color: aquamarine;
 }
 
 .carousel-btn {
@@ -246,8 +244,7 @@
     font-weight: 700;
     border: none;
     cursor: pointer;
-    /* background: rgba(0, 0, 0, 0); */
-    background-color: blue;
+    background: rgba(0, 0, 0, 0);
     z-index: 10;
 }
 
