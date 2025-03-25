@@ -134,7 +134,10 @@
     object-fit: cover;
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
+    margin:0;
+    padding: 0;
 }
+
 
 .project-photos img:hover {
     transform: scale(1.05);
@@ -167,7 +170,7 @@
     width: calc(95vw);
     z-index: 1;
     position: absolute;
-    
+
 }
 
 .carousel-btn {
@@ -188,7 +191,7 @@
     background-color: var(--primary-color);
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
     .section-header {
         font-size: 8vw;
     }
@@ -205,52 +208,70 @@
         font-size: 2.4vw;
     }
 
-        .about-me-content {
-            width: 55%;
-            margin: auto;
-        }
+    .about-me-content {
+        width: 55%;
+        margin: auto;
+    }
 
-        .projects h1 {
-            height: 8vw;
-        }
+    .projects h1 {
+        height: 7vw;
+    }
 
     .project-photos {
         flex-direction: row;
         width: 95vw;
-        height: auto;
+        
         margin: 0;
         justify-content: space-around;
+        background-color: red;
     }
 
     .project-photos img {
-        width: 30vw;
+        width: 31vw;
         height: 16.87vw;
+        background-color: blue;
     }
 
     .project-description {
         font-size: 1.5vw;
     }
 
-    .project-content {
-        height: 90vh;
-    }
 
     .skills-list li {
         font-size: 1.5vw;
     }
 
-
-    .project-carousel {
-        /* height: 25vh; */
+    .carousel-btn {
+        font-size: 2vw;
 
     }
 
-    .carousel-controls {
+}
+
+@media (min-width: 1600px) {
+    .section-header {
+        font-size: 7.4vw;
     }
 
-        .carousel-btn {
-            font-size: 2vw;
+    .section-subheader {
+        font-size: 4.5vw;
+    }
 
-        }
+    .section-subsubheader {
+        font-size: 2.8vw;
+    }
+
+    .section-description {
+        font-size: 2.2vw;
+    }
+
+    .projects h1 {
+        height: 6vw;
+    }
+
+    .project-description {
+        font-size: 1.3vw;
+    }
+
 
 }
