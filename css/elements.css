@@ -43,7 +43,6 @@
 .section-description {
     font-size: 6vw;
     line-height: 1.0;
-    max-width: 80%;
     color: var(--text-color);
     text-align: justify;
 }
@@ -63,6 +62,8 @@
     padding: 10vw 3vw 10vw 3vw;
     margin: auto;
 }
+
+
 
 .skills h1 {
     line-height: 0.95;
@@ -103,25 +104,22 @@
 }
 
 .projects h1 {
-    height: 14vw;
+    height: 15vw;
 }
 
 .project-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
-    
-
+    height: 90vh;
 }
 
 .project-description {
     font-size: 3vw;
     line-height: 1.4;
-
     text-align: justify;
-
-        margin: 20px 0 20px 0;
+    margin: 20px 0 20px 0;
+    max-width: calc(90vw);
 }
 
 .project-photos {
@@ -169,6 +167,10 @@
     display: flex;
     justify-content: space-between;
     height: 10vh;
+    width: calc(95vw);
+    z-index: 1;
+    position: absolute;
+    
 }
 
 .carousel-btn {
@@ -176,6 +178,7 @@
     font-weight: 700;
     border: none;
     cursor: pointer;
+    background: rgba(0, 0, 0, 0);
 }
 
 .carousel-btn:hover {
@@ -201,24 +204,52 @@
         font-size: 3vw;
     }
 
-    .section-description,
-    .project-description {
+    .section-description {
         font-size: 2.4vw;
-        max-width: 60%;
+    }
+
+        .about-me-content {
+            width: 55%;
+            margin: auto;
+        }
+
+        .projects h1 {
+            height: 8vw;
+        }
+
+    .project-photos {
+        flex-direction: row;
+        width: 95vw;
+        height: auto;
+        margin: 0;
+        justify-content: space-around;
+    }
+
+    .project-photos img {
+        width: 30vw;
+        height: 16.87vw;
+    }
+
+    .project-description {
+        font-size: 1.5vw;
     }
 
     .skills-list li {
         font-size: 1.5vw;
     }
 
-    .carousel-wrapper {
-        height: 500px;
+
+    .project-carousel {
+        /* height: 25vh; */
+
     }
 
-    .project-photos {
+    .carousel-controls {
     }
 
-    .carousel-btn {
-        font-size: 2vw;
-    }
+        .carousel-btn {
+            font-size: 2vw;
+
+        }
+
 }
