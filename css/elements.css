@@ -90,10 +90,11 @@
 .contact-link img {
     height: 5vh;
     transition: transform 0.3s ease-in-out;
+    overflow: visible;
 }
 
 .contact-link img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .projects {
