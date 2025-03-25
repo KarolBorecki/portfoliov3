@@ -11,12 +11,19 @@
 }
 
 :root {
-    --primary-color: #3e3e3e;
-    --secondary-color: #e3f2fd;
-    --text-color: #555;
-    --text-bold-color: #333;
-    --background-color: #f5f5dc;
-}
+    --primary-color: #011627;
+    --secondary-color: #C42021;
+    --text-color: #1f2224;
+    --text-bold-color: #011627;
+    --background-color: #CDD1C4;
+
+    --red-color: #A5243D;
+    --red-color-2: #C42021;
+    --yellow-color: #FF9F1C;
+    --black-color: #011627;
+    --blue-color: #0B4F6C;
+    --grey-color: #CDD1C4;
+}   
 
 * {
     margin: 0;
