@@ -13,6 +13,30 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            requestAnimationFrame(() => {
+                const observer = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (window.scrollY === 0) {
+                            entries[0].target.classList.add('visible');
+                        }
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, {
+                    threshold: 0.25,
+                    rootMargin: '0px 0px -10% 0px'
+                });
+
+                document.querySelectorAll('.animate-on-scroll').forEach(el => {
+                    observer.observe(el);
+                });
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -609,24 +633,7 @@
 
         updateCarousel();
     </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, {
-                threshold: 0.1
-            });
 
-            document.querySelectorAll('.animate-on-scroll').forEach(el => {
-                observer.observe(el);
-            });
-        });
-    </script>
 
 </body>
 
