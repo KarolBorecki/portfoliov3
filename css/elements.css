@@ -168,8 +168,8 @@
 }
 
 .project-header-icon {
-    width: 3vw;
-    height: 3vw;
+    width: 8vw;
+    height: 8vw;
 }
 
 .project-content {
@@ -195,11 +195,11 @@
 }
 
 .project-photos img {
-    width: 100%;
+    width: 95vw;
     height: 16vh;
     object-fit: cover;
+    object-position: center;
     border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
     margin: 0;
     padding: 0;
 }
@@ -260,9 +260,10 @@
 
 @media (min-width: 1100px) {
     .project-header-icon {
-            width: 2vw;
-            height: 2vw;
-        }
+        width: 2vw;
+        height: 2vw;
+    }
+
     .section-header {
         font-size: 8vw;
     }
