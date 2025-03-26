@@ -236,7 +236,7 @@
     width: calc(95vw);
     z-index: 2;
     position: absolute;
-    margin-top: -2vw;
+    margin-top: -10vw;
 }
 
 .carousel-btn {
