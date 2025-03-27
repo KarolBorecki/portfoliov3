@@ -18,7 +18,6 @@
     margin: 0;
     padding: 0;
     color: var(--text-color);
-    overflow: hidden;
     box-sizing: border-box;
     z-index: 1;
 }
@@ -28,7 +27,5 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     font-size: var(--font-size-medium);
-    overflow: -moz-scrollbars-none;
-    overflow: hidden;
     height: 100vh;
 }
