@@ -18,9 +18,6 @@
             requestAnimationFrame(() => {
                 const observer = new IntersectionObserver((entries, observer) => {
                     entries.forEach(entry => {
-                        if (window.scrollY === 0) {
-                            entries[0].target.classList.add('visible');
-                        }
                         if (entry.isIntersecting && !entry.target.classList.contains('visible')) {
                             entry.target.classList.add('visible');
                             observer.unobserve(entry.target);
