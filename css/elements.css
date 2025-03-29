@@ -122,11 +122,11 @@
     line-height: 0.95;
 }
 
-.skills-list li::before {
+/* .skills-list li::before {
     content: '•';
     color: var(--text-bold-color);
     margin-right: 10px;
-}
+} */
 
 .skills-list li {
     font-size: 5vw;
@@ -213,6 +213,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .carousel {
@@ -227,6 +228,7 @@
     word-wrap: break-word;
     overflow-wrap: break-word;
     white-space: normal;
+    overflow: hidden;
 }
 
 .carousel-controls {
@@ -236,6 +238,7 @@
     width: calc(95vw);
     z-index: 2;
     position: absolute;
+    overflow: hidden;
 }
 
 .carousel-btn {
@@ -248,7 +251,7 @@
 }
 
 .carousel-btn:hover {
-    color: var(--text-bold-color);
+    color: var(--yellow-color);
 }
 
 .footer {
